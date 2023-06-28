@@ -24,5 +24,5 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(agent.builddirectory)'
-    Contents: 'AngularProject2/**'
+    Contents: 'AngularProject2\**'
     TargetFolder: '$(build.artifactstagingdirectory)'
