@@ -8,7 +8,6 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  name: HostedVS2017
 
 steps:
 - task: NodeTool@0
