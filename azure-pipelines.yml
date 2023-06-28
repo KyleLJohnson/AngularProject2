@@ -23,6 +23,6 @@ steps:
   displayName: 'npm install and build'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)\AngularProject2'
-    Contents: '**'
+    SourceFolder: '$(build.StagingDirectory)'
+    Contents: 'AngularProject2\**'
     TargetFolder: '$(build.artifactstagingdirectory)'
